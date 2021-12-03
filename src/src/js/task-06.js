@@ -1,5 +1,4 @@
 const inputRef = document.getElementById('validation-input');
-// console.log(inputRef);
 
 inputRef.addEventListener('blur', onInputBlur);
 
@@ -12,3 +11,5 @@ function onInputBlur () {
         inputRef.classList.remove('valid');
     }
 };
+
+inputRef.addEventListener('blur', onInputBlur);

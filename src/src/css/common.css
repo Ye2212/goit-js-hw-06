@@ -26,7 +26,7 @@ button {
   cursor: pointer;
 }
 
-.gallery {
+/* .gallery {
   display: flex;
   flex-wrap: wrap;
 
@@ -34,4 +34,4 @@ button {
 .gallery__item:not(:last-child) {
   margin-right: 30px;
   margin-bottom: 30px;
-}
+} */
