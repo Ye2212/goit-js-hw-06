@@ -9,5 +9,7 @@ const buttonChangeColorRef = document
 function onBtnChangeColorClick () {
   const color = getRandomHexColor();
   document.body.style.backgroundColor = color;
+  spanColorRef.textContent = color;
+  console.log(spanColorRef.textContent)
 };
 

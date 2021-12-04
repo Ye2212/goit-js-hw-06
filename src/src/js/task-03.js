@@ -15,11 +15,13 @@ const images = [
 
 const galleryRef = document.querySelector('.gallery');
 galleryRef.style.display = "flex";
-galleryRef.style.flexwrap = "wrap";
-galleryRef.style.liststyle = "none";
+galleryRef.style.flexWrap = "wrap";
+galleryRef.style.listStyle = "none";
 
 const galleryMarkup = images
 .map(el => `<li  class="gallery__item"><img src='${el.url}l' alt = '${el.alt}' width = 200></li>`)
 .join('');
+// .map(({ url, alt }) => `<li  class="gallery__item"><img src='${url}l' alt = '${alt}' width = 200></li>`)
+// .join('');
 galleryRef.insertAdjacentHTML('beforeend', galleryMarkup);
 
