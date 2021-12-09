@@ -19,9 +19,19 @@ galleryRef.style.flexWrap = "wrap";
 galleryRef.style.listStyle = "none";
 
 const galleryMarkup = images
-.map(el => `<li  class="gallery__item"><img src='${el.url}l' alt = '${el.alt}' width = 200></li>`)
+.map(({url, alt}) => `<li  class="gallery__item"><img src='${url}' alt = '${alt}' width = 200></li>`)
 .join('');
-// .map(({ url, alt }) => `<li  class="gallery__item"><img src='${url}l' alt = '${alt}' width = 200></li>`)
-// .join('');
+// // .map(({ url, alt }) => `<li  class="gallery__item"><img src='${url}l' alt = '${alt}' width = 200></li>`)
+// // .join('');
 galleryRef.insertAdjacentHTML('beforeend', galleryMarkup);
 
+// const listEl = document.querySelector('.gallery');
+// listEl.style.listStyle = "none";
+// listEl.style.display = "flex";
+// listEl.style.flexWrap = "wrap-reverse";
+// listEl.style.marginBottom = "25px";
+
+// const listMarkup = images
+//   .map(image => `<li class="gallery_item"><img src='${ image.url }' alt='${ image.alt }' width = 320></li>`)
+//   .join('');
+// listEl.insertAdjacentHTML('afterbegin', listMarkup);
